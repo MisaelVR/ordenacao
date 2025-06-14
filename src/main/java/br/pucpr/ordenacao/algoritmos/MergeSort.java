@@ -6,7 +6,6 @@ public class MergeSort extends AlgoritmoDeOrdenacao {
         if (vetor == null || vetor.length <= 1) {
             return;
         }
-        // No merge sort, um array auxiliar de tamanho n é necessário 
         int[] auxiliar = new int[vetor.length];
         mergeSort(vetor, auxiliar, 0, vetor.length - 1);
     }
@@ -21,17 +20,15 @@ public class MergeSort extends AlgoritmoDeOrdenacao {
     }
 
     private void merge(int[] vetor, int[] auxiliar, int inicio, int meio, int fim) {
-        // Copia ambas as partes para o array auxiliar
         for (int i = inicio; i <= fim; i++) {
             auxiliar[i] = vetor[i];
-            this.numeroDeTrocas++; // Cada cópia para o auxiliar é uma movimentação
+            this.numeroDeTrocas++;
         }
 
         int i = inicio;
         int j = meio + 1;
         int k = inicio;
 
-        // Faz o merge de volta para o array original
         while (i <= meio && j <= fim) {
             this.numeroDeComparacoes++;
             if (auxiliar[i] <= auxiliar[j]) {
@@ -42,10 +39,9 @@ public class MergeSort extends AlgoritmoDeOrdenacao {
                 j++;
             }
             k++;
-            this.numeroDeTrocas++; // Cada cópia de volta é outra movimentação
+            this.numeroDeTrocas++;
         }
         
-        // Copia o resto da metade esquerda, se houver
         while (i <= meio) {
             vetor[k] = auxiliar[i];
             k++;

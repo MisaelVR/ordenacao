@@ -7,7 +7,6 @@ package br.pucpr.ordenacao.algoritmos;public class CocktailSort extends Algoritm
 
         while (trocado) {
             trocado = false;
-            // Loop da esquerda para a direita (como o Bubble Sort)
             for (int i = inicio; i < fim - 1; ++i) {
                 this.numeroDeComparacoes++;
                 if (vetor[i] > vetor[i + 1]) {
@@ -18,7 +17,6 @@ package br.pucpr.ordenacao.algoritmos;public class CocktailSort extends Algoritm
             if (!trocado) break;
             trocado = false;
             fim = fim - 1;
-            // Loop da direita para a esquerda
             for (int i = fim - 1; i >= inicio; i--) {
                 this.numeroDeComparacoes++;
                 if (vetor[i] > vetor[i + 1]) {

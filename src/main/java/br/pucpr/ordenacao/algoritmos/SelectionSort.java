@@ -12,7 +12,6 @@ public class SelectionSort extends AlgoritmoDeOrdenacao {
                     indiceMenor = j;
                 }
             }
-            // Troca o menor elemento encontrado com o primeiro elemento da parte não ordenada
             trocar(vetor, i, indiceMenor);
         }
     }

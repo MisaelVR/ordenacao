@@ -18,7 +18,6 @@ public abstract class AlgoritmoDeOrdenacao {
         this.numeroDeComparacoes = 0;
     }
     
-    // Método auxiliar para facilitar a troca de elementos e contagem.
     protected void trocar(int[] vetor, int i, int j) {
         int temp = vetor[i];
         vetor[i] = vetor[j];

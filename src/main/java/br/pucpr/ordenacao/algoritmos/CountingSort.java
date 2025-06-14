@@ -3,10 +3,9 @@ package br.pucpr.ordenacao.algoritmos;public class CountingSort extends Algoritm
     public void sort(int[] vetor) {
         if (vetor.length == 0) return;
 
-        // Encontra o valor máximo para saber o tamanho do array de contagem
         int max = vetor[0];
         for (int i = 1; i < vetor.length; i++) {
-            this.numeroDeComparacoes++; // Comparação para achar o máximo
+            this.numeroDeComparacoes++;
             if (vetor[i] > max) {
                 max = vetor[i];
             }
@@ -14,10 +13,9 @@ package br.pucpr.ordenacao.algoritmos;public class CountingSort extends Algoritm
 
         int[] contagem = new int[max + 1];
 
-        // Conta a frequência de cada elemento
         for (int num : vetor) {
             contagem[num]++;
-            this.numeroDeTrocas++; // Consideramos a escrita no array de contagem
+            this.numeroDeTrocas++;
         }
         
         int indiceVetor = 0;
@@ -26,7 +24,7 @@ package br.pucpr.ordenacao.algoritmos;public class CountingSort extends Algoritm
                 vetor[indiceVetor] = i;
                 indiceVetor++;
                 contagem[i]--;
-                this.numeroDeTrocas++; // Consideramos a reescrita no vetor original
+                this.numeroDeTrocas++;
             }
         }
     }
