@@ -106,5 +106,5 @@ Projeto desenvolvido por:
 - Projeto testado com vetores grandes, respeitando as limitações de memória e desempenho.
 ---
 ## 🔗 Links Importantes
-- 📂 Repositório GitHub: https://github.com/SEU_REPOSITORIO
+- 📂 Repositório GitHub: https://github.com/SEU_REPOSITORIO](https://github.com/MisaelVR/ordenacao
 - 🎥 Vídeo de explicação: https://youtu.be/SEU_VIDEO
