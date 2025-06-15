@@ -1,10 +1,8 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 
-# 1. Carrega o CSV (ajuste o nome/caminho se necessário)
 df = pd.read_csv('resultados_analise.csv')
 
-# 2. Renomeia colunas para facilitar (se o seu CSV já vier com esses nomes, essa parte pode ser removida)
 df.columns = [
     'Algoritmo',
     'TamanhoVetor',
@@ -13,11 +11,9 @@ df.columns = [
     'ComparacoesMedias'
 ]
 
-# 3. Exibe os dados completos no console
 print("\n=== Dados completos ===")
 print(df.to_string(index=False))
 
-# 4. Encontra o algoritmo mais rápido para cada tamanho de vetor
 best_time = (
     df.loc[df.groupby('TamanhoVetor')['TempoMedio_ms'].idxmin()]
       [['TamanhoVetor', 'Algoritmo', 'TempoMedio_ms']]
@@ -26,7 +22,6 @@ best_time = (
 print("\n=== Algoritmo mais rápido por tamanho ===")
 print(best_time.to_string(index=False))
 
-# 5. Conta quantas vezes cada algoritmo foi o mais rápido
 freq = (
     best_time['Algoritmo']
     .value_counts()
@@ -36,7 +31,6 @@ freq = (
 print("\n=== Frequência de melhor desempenho ===")
 print(freq.to_string(index=False))
 
-# 6. Plota gráficos em escala log-log para cada métrica
 metrics = ['TempoMedio_ms', 'TrocasMedias', 'ComparacoesMedias']
 for metric in metrics:
     plt.figure(figsize=(8,5))
@@ -56,5 +50,4 @@ for metric in metrics:
     plt.legend()
     plt.tight_layout()
 
-# 7. Exibe todos os gráficos de uma vez
 plt.show()
