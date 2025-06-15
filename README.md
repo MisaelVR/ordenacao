@@ -22,11 +22,9 @@ Todos os algoritmos foram desenvolvidos manualmente, **sem o uso de estruturas o
 
 Os algoritmos foram organizados nos seguintes grupos:
 
-- **Grupo A**: Insert Sort, Selection Sort  
-- **Grupo B**: Merge Sort, Quick Sort  
-- **Grupo C**: Gnome Sort, Counting Sort  
-
-> A divisão pode variar conforme a implementação dos integrantes. Consulte o código para os detalhes finais.
+- **Grupo A)**: Insert Sort, Selection Sort.
+- **Grupo B)**: Merge Sort.
+- **Grupo C)**: Gnome Sort, Counting sort, Cocktail sort.
 
 ---
 
