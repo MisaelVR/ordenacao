@@ -89,6 +89,7 @@ Os gráficos serão salvos na pasta graficos/.
 ![image](https://github.com/user-attachments/assets/8244143e-39f2-4ece-879c-1dfea620bce0)
 - graficos/iteracoes.png
 ![image](https://github.com/user-attachments/assets/f3566356-260d-4337-b0c7-606b587b73d5)
+
 ---
 
 ## 👨‍💼 Equipe
