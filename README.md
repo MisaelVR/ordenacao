@@ -96,8 +96,8 @@ Projeto desenvolvido por:
 - Emmanuel Victorio
 - Misael Rodrigues
 - Otávio Augusto
-Disciplina: Resolução de Problemas Estruturados em Computação
-Curso de Engenharia de Software – PUCPR
+- Disciplina: Resolução de Problemas Estruturados em Computação
+- Curso de Engenharia de Software – PUCPR
 
 --- 
 ## 📌 Observações Importantes
